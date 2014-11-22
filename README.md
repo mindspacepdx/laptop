@@ -19,7 +19,7 @@ Install
 
 Read, then run the script:
 
-    bash mac&1 | tee ~/laptop.log
+    bash <(curl -s https://raw.githubusercontent.com/mindspacepdx/laptop/master/mac) 2>&1 | tee ~/laptop.log
 
 Debugging
 ---------
