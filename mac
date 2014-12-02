@@ -132,14 +132,6 @@ fancy_echo "Installing watch, to execute a program periodically and show the out
 fancy_echo "Installing GitHub CLI client ..."
   brew_install_or_upgrade 'gh'
 
-if ! command -v sass >/dev/null; then
-  fancy_echo "Installing Sass, a css compiler ..."
-    gem install sass
-fi
-
-fancy_echo "Updating to latest Rubygems version ..."
-  gem update --system
-
 node_version="0.10"
 
 fancy_echo "Installing NVM, Node.js, and NPM, for running apps and installing JavaScript packages ..."
@@ -190,6 +182,11 @@ fancy_echo "Updating to latest Rubygems version ..."
 
 fancy_echo "Installing Bundler to install project-specific Ruby gems ..."
   gem install bundler --no-document
+  
+if ! command -v sass >/dev/null; then
+  fancy_echo "Installing Sass, a css compiler ..."
+    gem install sass
+fi
 
 fancy_echo "Configuring Bundler for faster, parallel gem installation ..."
   number_of_cores=$(sysctl -n hw.ncpu)
