@@ -211,7 +211,7 @@ else
   fancy_echo "rcm already installed. Skipping ..."
 fi
 
-fancy_echo "Adjusting Mac settings ..."
+fancy_echo "Adjusting Mac settings (logout to take shape) ..."
   defaults write NSGlobalDomain KeyRepeat -int 1
 
 fancy_echo "Installing your personal additions from ~/.laptop.local ..."
