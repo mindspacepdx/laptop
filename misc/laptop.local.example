@@ -1,0 +1,16 @@
+#!/bin/sh
+
+brew tap caskroom/cask
+brew install brew-cask
+
+brew cask install dropbox
+brew cask install google-chrome
+brew cask install rdio
+brew cask install adobe-creative-cloud
+brew cask install appcleaner
+brew cask install backblaze
+brew cask install cloak
+brew cask install firefox
+brew cask install github
+brew cask install google-hangouts
+brew cask install iterm2
