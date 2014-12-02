@@ -156,10 +156,8 @@ fi
 
 ruby_build_path="$HOME/.rbenv/plugins/ruby-build"
 
-if [[ -d "$ruby_build_path" ]]; then
-  fancy_echo "Installing ruby-build..."
+fancy_echo "Installing ruby-build..."
   brew_install_or_upgrade 'ruby-build'
-fi
 
 fancy_echo "Upgrading and linking OpenSSL ..."
   brew_install_or_upgrade 'openssl'
