@@ -168,6 +168,9 @@ ruby_version="$(curl -sSL http://ruby.thoughtbot.com/latest)"
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init - zsh)"
 
+fancy_echo "Init .zshrc"
+  . $HOME/.zshrc
+
 fancy_echo "Installing Ruby $ruby_version ..."
   rbenv install -s "$ruby_version"
 
