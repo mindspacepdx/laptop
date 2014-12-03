@@ -119,6 +119,8 @@ fancy_echo "Installing vim from Homebrew to get the latest version ..."
   
 fancy_echo "Installing mongodb ..."
   brew_install_or_upgrade 'mongodb'
+  ln -sfv /usr/local/opt/mongodb/*.plist ~/Library/LaunchAgents
+  launchctl load ~/Library/LaunchAgents/homebrew.mxcl.mongodb.plist
 
 fancy_echo "Installing ctags, to index files for vim tab completion of methods, classes, variables ..."
   brew_install_or_upgrade 'ctags'
