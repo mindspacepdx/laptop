@@ -168,7 +168,7 @@ fancy_echo "Upgrading and linking OpenSSL ..."
   brew_install_or_upgrade 'openssl'
   brew unlink openssl && brew link openssl --force
 
-ruby_version="$(curl -sSL http://ruby.thoughtbot.com/latest)"
+ruby_version="2.1.2"
 
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init - zsh)"
