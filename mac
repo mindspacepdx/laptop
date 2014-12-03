@@ -175,7 +175,6 @@ eval "$(rbenv init - zsh)"
 
 fancy_echo "Rehash rbenv"
   rbenv rehash
-  exec '. ~/.zshrc'
 
 fancy_echo "Installing Ruby $ruby_version ..."
   rbenv install -s "$ruby_version"
