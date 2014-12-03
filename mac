@@ -186,6 +186,9 @@ fancy_echo "Setting $ruby_version as global default Ruby ..."
 
 fancy_echo "Updating to latest Rubygems version ..."
   gem update --system
+  
+fancy_echo "Installing Jekyll ..."
+  gem install jekyll
 
 fancy_echo "Installing Bundler to install project-specific Ruby gems ..."
   gem install bundler --no-document
