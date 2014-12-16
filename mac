@@ -191,6 +191,7 @@ fancy_echo "Installing Jekyll ..."
 
 fancy_echo "Installing Bundler to install project-specific Ruby gems ..."
   gem install bundler --no-document
+  rbenv rehash
   
 if ! command -v sass >/dev/null; then
   fancy_echo "Installing Sass, a css compiler ..."
