@@ -14,3 +14,4 @@ brew cask install firefox
 brew cask install github
 brew cask install google-hangouts
 brew cask install iterm2
+brew cask install sublime-text
