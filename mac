@@ -148,8 +148,8 @@ fancy_echo "Installing NVM, Node.js, and NPM, for running apps and installing Ja
   source $(brew --prefix nvm)/nvm.sh
   nvm install "$node_version"
 
-  fancy_echo "Setting $node_version as the global default nodejs..."
-    nvm alias default "$node_version"
+  # fancy_echo "Setting $node_version as the global default nodejs..."
+    # nvm alias default "$node_version"
 
 if [[ ! -d "$HOME/.rbenv" ]]; then
   fancy_echo "Installing rbenv, to change Ruby versions ..."
