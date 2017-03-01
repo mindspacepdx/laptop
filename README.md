@@ -36,8 +36,6 @@ What it sets up
 * [Foreman] for serving Rails apps locally
 * [Git] for version control
 * [gh] for interacting with the GitHub API
-* [Heroku Config] for local `ENV` variables
-* [Heroku Toolbelt] for interacting with the Heroku API
 * [Homebrew] for managing operating system libraries
 * [ImageMagick] for cropping and resizing images
 * [Node.js] and [NPM], for running apps and installing JavaScript packages
