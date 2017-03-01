@@ -188,12 +188,6 @@ fancy_echo "Configuring Bundler for faster, parallel gem installation ..."
   number_of_cores=$(sysctl -n hw.ncpu)
   bundle config --global jobs $((number_of_cores - 1))
 
-fancy_echo "Installing Heroku CLI client ..."
-  brew_install_or_upgrade 'heroku-toolbelt'
-
-fancy_echo "Installing the heroku-config plugin to pull config variables locally to be used as ENV variables ..."
-  heroku plugins:install https://github.com/ddollar/heroku-config.git
-
 fancy_echo "Installing foreman ..."
   gem install foreman
   
